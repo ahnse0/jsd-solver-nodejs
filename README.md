@@ -1,7 +1,7 @@
-#Installation 
+# Installation 
 `npm install`
 
-#Usage
+# Usage
 ```js
 const { CloudflareJSDSolver, clientFetch } = require("C:\\Users\\ivant\\Documents\\Github\\jsd-solver-nodejs\\index");
 const clientInformation = {
