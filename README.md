@@ -1,7 +1,16 @@
 # Installation 
 ` npm i https://github.com/JonJon565/jsd-solver-nodejs`
 
-# Usage
+
+# Normal Usage
+```js
+const { CloudflareJSDSolver, clientFetch } = require("jsd-solver-nodejs");
+const cloudflareJSDSolver = new CloudflareJSDSolver();
+const cf_clearance = await cloudflareJSDSolver.generateCF_Clearance("https://example.com/path");
+console.log(cf_clearance);// _xedK7.........
+```
+
+# Custom Fetch Usage
 ```js
 const { CloudflareJSDSolver, clientFetch } = require("jsd-solver-nodejs");
 const clientInformation = {
