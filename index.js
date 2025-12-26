@@ -55,8 +55,10 @@ class CloudflareJSDSolver {
         };
 
         const html = (await this.browserFetch(urlClassed, { headers: extraHeaders_html, method: "GET" })).body;
+        console.log(html);
         if(!html) throw new Error("body is null");
         const javascript = (await this.browserFetch(javascriptUrl || `https://${urlClassed.host}/cdn-cgi/challenge-platform/scripts/jsd/main.js`, { headers: extraHeaders_javascript, method: "GET" })).body;
+        console.log(javascript);
         if(!javascript) throw new Error("javascript is null");
 
         const ast = babel.parse(javascript);
