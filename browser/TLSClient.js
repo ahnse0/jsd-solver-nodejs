@@ -29,8 +29,8 @@ const crypto = require("crypto");
 const path = require("path");
 
 const lib =
-  process.platform === "win32" ? "tls-client-windows-64-1.11.2.dll" : 
-  process.platform === "darwin" ? `tls-client-darwin-${process.arch === "arm64" ? "arm64" : "amd64"}-1.11.2.dylib` : "tls-client-linux-ubuntu-amd64-1.11.2.so";
+  process.platform === "win32" ? "tls-client-windows-64-1.12.1.dll" :
+  process.platform === "darwin" ? `tls-client-darwin-${process.arch === "arm64" ? "arm64" : "amd64"}-1.12.1.dylib` : "tls-client-linux-ubuntu-amd64-1.11.2.so";
 
 
 const tlsClientLibrary = ffi.Library(path.join(__dirname, lib), {
