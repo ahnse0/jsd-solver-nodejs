@@ -10,6 +10,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@breush/ffi-napi": "^4.0.13",
+    "@breush/ref-napi": "^4.0.9",
     "@babel/core": "^7.28.5",
     "@babel/traverse": "^7.28.5",
     "ref-napi": "^3.0.3",

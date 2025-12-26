@@ -24,7 +24,7 @@ package.json
 extract .tgz/packages to ./node_modules/ffi-napi
 */
 
-const ffi = require("./ffi-napi");
+const ffi = require("@breush/ffi-napi");
 const crypto = require("crypto");
 const path = require("path");
 
